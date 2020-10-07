@@ -3,7 +3,13 @@
 
 拯救IOT设备
 
-修改user_account及user_wlan_ip
+*.txt*
+
+修改user_account为一卡通号及user_wlan_ip
+
+*.sh*
+
+修改ID为一卡通号
 
 **TODO:**
 
