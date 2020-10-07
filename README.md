@@ -3,8 +3,8 @@
 
 拯救IOT设备
 
-修改user_account及user_wlan_ip
+编辑sh中ID为一卡通号（密码暂时统一为123456）
 
 **TODO:**
 
-IP获取、多拨
+多拨
