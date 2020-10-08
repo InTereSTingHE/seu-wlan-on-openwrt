@@ -6,8 +6,7 @@
 
 修改ID为一卡通号
 
-***curl_url.txt***
-<br/>*起点*
+***curl_url.txt # 起点***
 
 修改user_account为一卡通号及user_wlan_ip
 
