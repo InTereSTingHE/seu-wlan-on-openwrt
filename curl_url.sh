@@ -1,10 +1,10 @@
 #!/bin/sh
 
-# network adapter
+# 网卡
 adapter='wlan0'
-# ID card
+# 一卡通号
 ID='220203570'
-# temp password in WUXI campus
+# 无锡分校临时密码
 password='123456'
 
 echo "ping 114.114.114.114"
@@ -12,7 +12,7 @@ while true
 do
     ping -c 1 114.114.114.114 > /dev/null 2>&1
     if [ $? -eq 0 ];then
-        echo "network good"
+        echo "开始冲浪"
 
     else
         IP=$(ifconfig $adapter|sed -rn 's#^.*dr:(.*)B.*$#\1#gp')
@@ -23,15 +23,15 @@ do
         login="curl $url"
         $login
         echo $login
-        echo "complete, 5s to check"
+        echo "我好了,5后检查"
         sleep 5
 
         echo "ping 114.114.114.114"
         ping -c 1 114.114.114.114 > /dev/null 2>&1
         if [ $? -eq 0 ];then
-            echo "chong lang"
+            echo "开始冲浪"
         else
-            echo "gg"
+            echo "冲不动了"
         fi
     fi
     echo "THE END"
